@@ -1,5 +1,9 @@
 package main;
 
+import binarySearchTree.ABP;
+import binarySearchTree.BNode;
+import linkedList.LinkedList;
+
 public class Main {
 	public static void main(String[] args) {
 //		Stack<String> s = new Stack<>(100);
@@ -18,13 +22,23 @@ public class Main {
 //		System.out.println(s);
 
 
-		ABP<Integer> abp = new ABP<>(new BNode<Integer>(1, new BNode<Integer>(0, null, null),
-		                                                new BNode<Integer>(3, new BNode<>(2, null, null), null)));
+//		ABP<Integer> abp = new ABP<>(new BNode<Integer>(1, new BNode<Integer>(0, null, null),
+//		                                                new BNode<Integer>(3, new BNode<>(2, null, null), null)));
+//
+//
+////		abp.printDFS();
+//
+//		abp.printBFS();
+//		System.out.println("height = " + abp.getHeight());
 
+		LinkedList<Integer> ll = new LinkedList<>();
 
-//		abp.printDFS();
+		ll.add(1);
+		ll.add(2);
+		ll.add(3);
 
-		abp.printBFS();
-		System.out.println("height = " + abp.getHeight());
+		ll.remove(( Integer  )2);
+
+		System.out.println(ll);
 	}
 }

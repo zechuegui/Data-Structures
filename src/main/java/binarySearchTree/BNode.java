@@ -1,4 +1,4 @@
-package main;
+package binarySearchTree;
 
 public class BNode<T> {
 
